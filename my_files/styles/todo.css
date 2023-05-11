@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header_div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_div {
+    margin: 1%;
+}
+
+.tabs_div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 192px;
+    height: 56px;
+}
+
+.home_tab, .todo_tab, .things_tab {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 20px;
+    font: 24px Poppins;
+    text-decoration: none;
+    color: black;
+}
+
+.home_tab:hover, .things_tab:hover {
+    color: red;
+}
+
+.todo_tab {
+    color: #108CC9;
+}
+
+.head_text_div {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.head_text {
+    font: 36px Poppins;
+    font-weight: bold;
+}
+
+.text_div {
+    margin-top: 1%;
+    
+    
+}
+
+.text {
+    font: 20px Poppins;
+    display: flex;
+    justify-content: center;
+    color: #222222;
+}
+
+.button_div {
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    font: 24px Poppins;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.button:hover {
+    box-shadow: 0.4rem 0.4rem 0 rgb(29, 29, 29);
+    transform: translate(-0.4rem, -0.4rem);
+}
+
+.footer_div {
+    margin-top: 15%;
+    height: 100px;
+    background-color: #333333;
+}
+
+.minecraft_block {
+    height: 60px;
+    margin-left: 5%;
+    margin-top: 2%;
+}

@@ -1,0 +1,106 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header_div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_div {
+    margin: 1%;
+}
+
+.tabs_div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 192px;
+    height: 56px;
+}
+
+.home_tab, .todo_tab, .things_tab {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 20px;
+    font: 24px Poppins;
+    text-decoration: none;
+    color: black;
+}
+
+.home_tab:hover, .todo_tab:hover {
+    color: red;
+}
+
+.things_tab {
+    color: #108CC9;
+}
+
+.head_text_div {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.head_text {
+    font: 42px Poppins;
+}
+
+.content_div {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    font: 16px Poppins;
+}
+
+.content_command_div_div {
+    margin-top: 5%;
+}
+
+.content_command_div {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: aqua;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_command_text {
+    font: 16px Poppins;
+    color: black;
+    margin: 1%;
+}
+
+.copy_button {
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: aqua;
+    border-color: rgb(0, 170, 170);
+    
+}
+
+.footer_div {
+    margin-top: 15%;
+    height: 100px;
+    background-color: #333333;
+}
+
+.minecraft_block {
+    height: 60px;
+    margin-left: 5%;
+    margin-top: 2%;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/things.css">
+    <script src="scripts/app.js"></script>
+    <title>Kule Ting</title>
+</head>
+<body>
+    
+    <header>
+        <div class="header_div">
+
+            <div class="logo_div">
+                <img src="images/minecraft-logopng.png" class="logo">
+            </div>
+
+            <div class="tabs_div">
+                <a href="index.html" class="home_tab">Hjem</a>
+                <a href="todo.html" class="todo_tab">Kva skal du gjere?</a>
+                <p class="things_tab">Kule ting</p>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="head_text_div">
+            <p class="head_text">Kule ting du kan gjere i Linux sin Terminal</p>
+        </div>
+
+        <div class="content_div">
+            <p class="content">Inni Linux Terminal eller putty Skriv:</p>
+        </div>
+
+        <div class="content_command_div">
+            <p class="content_command_text" id="content_command_text1">sudo apt install cowsay</p>
+            <button class="copy_button" onclick="copy1()">Copy!</button>
+        </div>
+
+        <div class="content_command_div">
+            <p class="content_command_text" id="content_command_text2">sudo apt install fortune-mod</p>
+            <button class="copy_button" onclick="copy2()">Copy!</button>
+        </div>
+
+        <div class="content_command_div">
+            <p class="content_command_text" id="content_command_text3">fortune | cowsay</p>
+            <button class="copy_button" onclick="copy3()">Copy!</button>
+        </div>
+
+        <div class="content_command_div">
+            <p class="content_command_text" id="content_command_text4">cowsay -f dragon "Sett inn din tekst"</p>
+            <button class="copy_button" onclick="copy4()">Copy!</button>
+        </div>
+
+        <div class="content_command_div_div">
+
+            <div class="content_command_div">
+                <p class="content_command_text" id="content_command_text5">sudo apt install cmatrix</p>
+                <button class="copy_button" onclick="copy5()">Copy!</button>
+            </div>
+
+            <div class="content_command_div">
+                <p class="content_command_text" id="content_command_text6">cmatrix   (ctrl + c for å stoppe)</p>
+                <button class="copy_button" onclick="copy6()">Copy!</button>
+            </div>
+
+        </div>
+
+        <div class="content_command_div_div">
+
+            <div class="content_command_div">
+                <p class="content_command_text" id="content_command_text7">sudo apt install figlet</p>
+                <button class="copy_button" onclick="copy7()">Copy!</button>
+            </div>
+
+            <div class="content_command_div">
+                <p class="content_command_text" id="content_command_text8">figlet "Sett inn din tekst"</p>
+                <button class="copy_button" onclick="copy8()">Copy!</button>
+            </div>
+
+        </div>
+
+        <div class="content_command_div_div">
+
+            <div class="content_command_div">
+                <p class="content_command_text" id="content_command_text9">sudo apt install sl</p>
+                <button class="copy_button" onclick="copy9()">Copy!</button>
+            </div>
+
+            <div class="content_command_div">
+                <p class="content_command_text" id="content_command_text10">sl</p>
+                <button class="copy_button" onclick="copy10()">Copy!</button>
+            </div>
+
+            <div class="content_command_div">
+                <p class="content_command_text" id="content_command_text11">sl -laF</p>
+                <button class="copy_button" onclick="copy11()">Copy!</button>
+            </div>
+
+            <div class="content_command_div">
+                <p class="content_command_text" id="content_command_text12">sl -laf</p>
+                <button class="copy_button" onclick="copy12()">Copy!</button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer_div">
+            <img src="images/minecraft-block.png" class="minecraft_block">
+        </div>
+    </footer>
+
+</body>
+</html>

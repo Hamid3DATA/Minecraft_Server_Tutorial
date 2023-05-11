@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/app.js"></script>
+    <title>Minecraft Server Tutorial</title>
+</head>
+<body>
+
+    <header>
+        <div class="header_div">
+
+            <div class="logo_div">
+                <img src="images/minecraft-logopng.png" class="logo">
+            </div>
+
+            <div class="tabs_div">
+                <p class="home_tab">Hjem</p>
+                <a href="todo.html" class="todo_tab">Kva skal du gjere?</a>
+                <a href="things.html" class="things_tab">Kule ting</a>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="background_image_div">
+            <img src="images/background.jpg" class="background_image">
+        </div>
+
+        <div class="background_text_div">
+            <p class="text_over_image">Minecraft Server</p>
+            <p class="undertext_over_image">Her vil du lære korleis ein lagar Minecraft Server med Ubuntu 22.04</p>
+        </div>
+
+        <div class="background_button_div">
+            <a href="todo.html" class="button_over_image">Start</a>
+        </div>
+
+        <div class="tutorial_container" id="start">
+
+            <div class="tutorial_div">
+
+                <div class="number_div">
+                    <p class="number_text">01. Logg inn i VM</p>
+                </div>
+
+                <div class="content_01">
+                    <p class="content_text">Du skal logge deg inn i VM og laste ned ssh(Secure Socket Shell) med å skrive</p>
+
+                    <div class="content_command_div">
+                        <p class="content_command_text" id="content_command_text1">sudo apt install ssh -y</p>
+                        <button class="copy_button" onclick="copy1()">Copy!</button>
+                    </div>
+
+                    <p class="content_text">Etter du har lasta ned ssh... skal du finne ut ip-en til VM-en med å skrive</p>
+                    
+                    <div class="content_command_div">
+                        <p class="content_command_text" id="content_command_text2">ip a</p>
+                        <button class="copy_button" onclick="copy2()">Copy!</button>
+                    </div>
+
+                    <p class="content_text">det kan du opne eit program som heiter "putty" i Windows og skrive inn ip-en til VM-en så trykker du på "Open"</p>
+                </div>
+
+                <div class="number_div">
+                    <p class="number_text">02. Laste ned ting du trenger</p>
+                </div>
+
+                <div class="content_02">
+                    <p class="content_text">Når du er inni putty sin terminal må du først logge deg inn med brukarnamn og passord av VM-en. Etter du er logga inn skriver du:</p>
+                    
+                    <div class="content_command_div">
+                        <p class="content_command_text" id="content_command_text3">sudo apt update</p>
+                        <button class="copy_button" onclick="copy3()">Copy!</button>
+                    </div>
+
+                    <p class="content_text">og deretter skriver d​u</p>
+
+                    <div class="content_command_div">
+                        <p class="content_command_text" id="content_command_text4">sudo apt upgrade -y</p>
+                        <button class="copy_button" onclick="copy4()">Copy!</button>
+                    </div>
+
+                    <p class="content_text">Så laster du ned Java i VM-en med å skrive:</p>
+
+                    <div class="content_command_div">
+                        <p class="content_command_text" id="content_command_text5">sudo apt install openjdk-17-jre-headless</p>
+                        <button class="copy_button" onclick="copy5()">Copy!</button>
+                    </div>
+
+                    <p class="content_text">Etter det laster du ned noko som heiter "screen" med å skrive:</p>
+
+                    <div class="content_command_div">
+                        <p class="content_command_text" id="content_command_text6">sudo apt install screen</p>
+                        <button class="copy_button" onclick="copy6()">Copy!</button>
+                    </div>
+
+                    <p class="content_text">Når du har gjort alt det skal du laste ned Minecraft Server med å skrive</p>
+                    
+                    <div class="content_command_div">
+                        <p class="content_command_text" id="content_command_text7">​wget https://piston-data.mojang.com/v1/objects/f69c284232d7c7580bd89a5a4931c3581eae1378/server.jar</p>
+                        <button class="copy_button" onclick="copy7()">Copy!</button>
+                    </div>
+
+                    <p class="content_text">Så skriver du</p>
+
+                    <div class="content_command_div">
+                        <p class="content_command_text" id="content_command_text8">mv server.jar minecraft_server_1.19.2.jar</p>
+                        <button class="copy_button" onclick="copy8()">Copy!</button>
+                    </div>
+                    <p class="content_text">Det gjor du for å bytte namnet på fila du nettopp lasta ned frå "server.jar" til "minecraft_server_1.19.2.jar"</p>
+                </div>
+
+                <div class="number_div">
+                    <p class="number_text">03. Konfigurere Serveren</p>
+                </div>
+
+                <div class="content_03">
+                    <p class="content_text">For å køyre "screen" kan du skrive</p>
+
+                    <div class="content_command_div">
+                        <p class="content_command_text" id="content_command_text9">screen</p>
+                        <button class="copy_button" onclick="copy9()">Copy!</button>
+                    </div>
+
+                    <p class="content_text">Så skriver du</p>
+
+                    <div class="content_command_div">
+                        <p class="content_command_text" id="content_command_text10">free -g -h -t</p>
+                        <button class="copy_button" onclick="copy10()">Copy!</button>
+                    </div>
+
+                    <p class="content_text">Etter du har skrevet det får du opp noko som det her</p>
+                    <img src="images/ram.png" class="ram_image">
+                    <p class="content_text">Her kan du se kor mykje RAM VM-en har totalt og kor mykje ut av det er tilgjengeleg</p>
+                    <p class="content_text">Når du starter ein Minecraft Server veljar du kor mykje RAM den skal ha. Du burde gi Minecraft Serveren din minst 2GB med RAM og alt over det går fint.</p>
+                    
+                    <div class="content_command_div">
+                        <p class="content_command_text" id="content_command_text11">​java -Xms2G -Xmx2G -jar minecraft_server_1.19.2.jar nogui</p>
+                        <button class="copy_button" onclick="copy11()">Copy!</button>
+                    </div>
+
+                    <p class="content_text">-Xms2G over står for 2GB og om du vil ha meir RAM er det bare å bytte ut begge 2 talla med eit anna tall.</p>
+                    <p class="content_text">Du vil sikkert få ein melding som seier at du ikkje kan starte serveren, fordi du har endå ikkje akseptert eula vilkåra og det kan du gjere med å skrive</p>
+                    
+                    <div class="content_command_div">
+                        <p class="content_command_text" id="content_command_text12">nano eula.txt</p>
+                        <button class="copy_button" onclick="copy12()">Copy!</button>
+                    </div>
+
+                    <p class="content_text">for å opne fila. I fila bytter du "false" til "true", så trykker du på ctrl + x, så trykker du på y og enter.</p>
+                    <p class="content_text">For å bytte på minecraft server innstillinger kan du skrive:</p>
+                    
+                    <div class="content_command_div">
+                        <p class="content_command_text" id="content_command_text13">nano server.properties</p>
+                        <button class="copy_button" onclick="copy13()">Copy!</button>
+                    </div>
+
+                    <p class="content_text">Og der kan du bytte innstillingar som ip, port, difficulty, gamemode osv. Ip-en må vere VM-sin ip (den du brukte i putty) (Default port for Minecraft Server er 25565) for å gå ut må du trykke ctrl + x, så trykker du y og enter.</p>
+                </div>
+
+                <div class="number_div">
+                    <p class="number_text">04. Start Serveren</p>
+                </div>
+
+                <div class="content_04">
+                    <p class="content_text">Etter det, starter du serveren med å skrive:</p>
+
+                    <div class="content_command_div">
+                        <p class="content_command_text" id="content_command_text14">​java -Xms2G -Xmx2G -jar minecraft_server_1.19.2.jar nogui</p>
+                        <button class="copy_button" onclick="copy14()">Copy!</button>
+                    </div>
+
+                    <p class="content_text">Denne kommandoen startar serveren med 2GB RAM</p>
+                </div>
+
+                <div class="number_div">
+                    <p class="number_text">05. Spill Minecraft</p>
+                </div>
+
+                <div class="content_05">
+                    <p class="content_text">Open Lunar Client og start Minecraft 1.19.2 gå inn på Multiplayer -> Add Server -> namnet er ikkje viktig og kan vere kva som helst. Adressen skal vere den du skreiv i minecraft.properties porten også.</p>
+                    <p class="content_text">Eksempel: 192.168.1.195:30001</p>
+                </div>
+
+                <div class="button_div">
+                    <a href="things.html" class="done_button">Er ferdig og har tid til noko ekstra?</a>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_div">
+            <img src="images/minecraft-block.png" class="minecraft_block">
+        </div>
+    </footer>
+
+</body>
+</html>
