@@ -1,6 +1,6 @@
 # Minecraft_Server_Tutorial
 
-The files you find under "files" folder are a website that was created using Nicepage as a test.
+The files you find under "Files" folder are a website that was created using Nicepage as a test.
 
 The page i made myself are under the folder named "my_files".
 
