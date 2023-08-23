@@ -9,4 +9,4 @@ To host this site locally using raspberry pi you will need "Apache2". You can in
 sudo apt install apache2
 ```
 
-After you installed it you can go to ```/var/www/html/``` and put the website files in there. Then you can access the site using raspberry pi's IP address.
+After you installed it you can go to ```/var/www/html/``` and put the website files in there. You can then access the site using raspberry pi's IP address.
