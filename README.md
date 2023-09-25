@@ -10,3 +10,6 @@ sudo apt install apache2
 ```
 
 After you installed it you can go to ```/var/www/html/``` and replace the index file with the website files you just downloaded. You can then access the site in your browser by using raspberry pi's IP address.
+
+
+Plugin Tutorial for future reference is [here](https://www.arubacloud.com/tutorial/how-to-install-mods-on-a-minecraft-server-with-ubuntu-20-04.aspx)
