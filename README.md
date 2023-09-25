@@ -13,3 +13,5 @@ After you installed it you can go to ```/var/www/html/``` and replace the index 
 
 
 Plugin Tutorial for future reference is [here](https://www.arubacloud.com/tutorial/how-to-install-mods-on-a-minecraft-server-with-ubuntu-20-04.aspx)
+
+Minecraft Bedrock Server Tutorial reference is [here](https://www.reddit.com/r/MinecraftTutorials/comments/k4q986/2020_minecraft_ubuntu_server_tutorial_tips_full/?rdt=46278)
